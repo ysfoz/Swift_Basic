@@ -35,6 +35,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Change"/>
+                                <connections>
+                                    <action selector="changeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EZN-YF-13i"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -51,10 +54,13 @@
                             <constraint firstItem="GgI-YQ-l4Q" firstAttribute="centerX" secondItem="nRi-YR-Bqk" secondAttribute="centerX" id="zLx-n2-gBd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="GgI-YQ-l4Q" id="pMI-yu-neA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-13.043478260869566" y="71.651785714285708"/>
+            <point key="canvasLocation" x="-1993" y="-497"/>
         </scene>
     </scenes>
     <resources>
