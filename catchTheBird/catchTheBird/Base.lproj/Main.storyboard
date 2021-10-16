@@ -37,12 +37,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nza-aJ-sLC">
+                                <rect key="frame" x="178" y="773" width="59" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Replay"/>
+                                <connections>
+                                    <action selector="replayclicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2er-QN-rMg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="highScoreLabel" destination="GFT-eE-Okv" id="DHA-Ag-tXt"/>
+                        <outlet property="replayBuuton" destination="Nza-aJ-sLC" id="5nq-Up-9Jy"/>
                         <outlet property="scoreLabel" destination="hzy-N5-FML" id="Qtd-Sm-kvn"/>
                         <outlet property="timeLabel" destination="xTc-BX-n2t" id="TYm-DU-Wmo"/>
                     </connections>

@@ -18,7 +18,10 @@ class ViewController: UIViewController {
     var width = CGFloat(0)
     var height = CGFloat(0)
     
+   
     
+    
+    @IBOutlet weak var replayBuuton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +30,14 @@ class ViewController: UIViewController {
         birdTimeReset()
         image.frame = CGRect(x: width , y: height , width: 100, height: 100)
         view.addSubview(image)
+        replayBuuton.isHidden = true
+        image.up
         
+    }
+    @IBAction func replayclicked(_ sender: Any) {
+        self.counterReset()
+        self.birdTimeReset()
+    
     }
     
     func birdTimeReset() {
@@ -37,6 +47,7 @@ class ViewController: UIViewController {
         
     }
     func counterReset() {
+        self.replayBuuton.isHidden = true
         counter = 10
         timeLabel.text = String(counter)
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(changeTimer), userInfo: nil, repeats: true)
@@ -58,7 +69,9 @@ class ViewController: UIViewController {
             timer.invalidate()
             // buraya Times is up yerine scoru koyalim
             let alert = UIAlertController(title: "Your Score : ", message: "Do you want to play again ", preferredStyle: UIAlertController.Style.alert)
-            let cancelButton = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
+            let cancelButton = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel) { UIAlertAction in
+                self.replayBuuton.isHidden = false
+            }
             let replayButton = UIAlertAction(title: "Replay", style: UIAlertAction.Style.default) { UIAlertAction in
 //                self.counter = 10
                 self.counterReset()
