@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     let image = UIImageView(image: UIImage(named: "bird"))
     var width = CGFloat(0)
     var height = CGFloat(0)
+    var score = 0
+    var savedHighScore : Int {UserDefaults.standard.integer(forKey: "highScore")}
+    
     
    
     
@@ -31,22 +34,42 @@ class ViewController: UIViewController {
         image.frame = CGRect(x: width , y: height , width: 100, height: 100)
         view.addSubview(image)
         replayBuuton.isHidden = true
-        image.up
+        image.isUserInteractionEnabled = true
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(changeScore))
+        image.addGestureRecognizer(gestureRecognizer)
+        scoreLabel.text = String(score)
+        highScoreLabel.text = "HighScore : \(String(savedHighScore))"
+     
+       
+        
         
     }
+    @objc func changeScore() {
+        score += 1
+        scoreLabel.text = String(score)
+        if score > savedHighScore {
+            UserDefaults.standard.set(score, forKey: "highScore")
+            highScoreLabel.text = "HighScore : \(String(savedHighScore))"
+            
+        }
+    }
+    
     @IBAction func replayclicked(_ sender: Any) {
         self.counterReset()
         self.birdTimeReset()
+        
     
     }
     
     func birdTimeReset() {
         width = view.frame.size.width * CGFloat(Float.random(in: 0.1 ..< 0.7))
         height = view.frame.size.height * CGFloat(Float.random(in: 0.1 ..< 0.7))
-        birdtimer = Timer.scheduledTimer(timeInterval: 0.3, target: self, selector: #selector(changeBirdTimer), userInfo: nil, repeats: true)
+        birdtimer = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(changeBirdTimer), userInfo: nil, repeats: true)
         
     }
     func counterReset() {
+        score = 0
+      scoreLabel.text = String(0)
         self.replayBuuton.isHidden = true
         counter = 10
         timeLabel.text = String(counter)
@@ -73,7 +96,6 @@ class ViewController: UIViewController {
                 self.replayBuuton.isHidden = false
             }
             let replayButton = UIAlertAction(title: "Replay", style: UIAlertAction.Style.default) { UIAlertAction in
-//                self.counter = 10
                 self.counterReset()
                 self.birdTimeReset()
             }
