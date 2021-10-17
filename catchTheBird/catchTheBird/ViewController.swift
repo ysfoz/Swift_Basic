@@ -20,10 +20,7 @@ class ViewController: UIViewController {
     var score = 0
     var savedHighScore : Int {UserDefaults.standard.integer(forKey: "highScore")}
     
-    
    
-    
-    
     @IBOutlet weak var replayBuuton: UIButton!
     
     override func viewDidLoad() {
@@ -31,8 +28,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         counterReset()
         birdTimeReset()
-        image.frame = CGRect(x: width , y: height , width: 100, height: 100)
-        view.addSubview(image)
         replayBuuton.isHidden = true
         image.isUserInteractionEnabled = true
         let gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(changeScore))
@@ -90,8 +85,9 @@ class ViewController: UIViewController {
         timeLabel.text = String(counter)
         if counter <= 0 {
             timer.invalidate()
-            // buraya Times is up yerine scoru koyalim
-            let alert = UIAlertController(title: "Your Score : ", message: "Do you want to play again ", preferredStyle: UIAlertController.Style.alert)
+            birdtimer.invalidate()
+            image.isUserInteractionEnabled = false
+            let alert = UIAlertController(title: "Your Score : \(score) ", message: "Do you want to play again ", preferredStyle: UIAlertController.Style.alert)
             let cancelButton = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel) { UIAlertAction in
                 self.replayBuuton.isHidden = false
             }
