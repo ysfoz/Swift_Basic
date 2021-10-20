@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4EA4F2C7271F767000EB4DD7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA4F2C6271F767000EB4DD7 /* main.swift */; };
+		4E8AB1C02720273E0024673E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8AB1BF2720273E0024673E /* main.swift */; };
+		4E8AB1C72720275A0024673E /* Musicians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8AB1C62720275A0024673E /* Musicians.swift */; };
+		4E8AB1C927202D220024673E /* SuperMusicians.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E8AB1C827202D220024673E /* SuperMusicians.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4EA4F2C1271F767000EB4DD7 /* CopyFiles */ = {
+		4E8AB1BA2720273E0024673E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +25,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4EA4F2C3271F767000EB4DD7 /* MusicianClass - OOP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MusicianClass - OOP"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EA4F2C6271F767000EB4DD7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4E8AB1BC2720273E0024673E /* MusiciansClass - OOP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "MusiciansClass - OOP"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E8AB1BF2720273E0024673E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4E8AB1C62720275A0024673E /* Musicians.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Musicians.swift; sourceTree = "<group>"; };
+		4E8AB1C827202D220024673E /* SuperMusicians.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperMusicians.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4EA4F2C0271F767000EB4DD7 /* Frameworks */ = {
+		4E8AB1B92720273E0024673E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,65 +42,67 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4EA4F2BA271F767000EB4DD7 = {
+		4E8AB1B32720273E0024673E = {
 			isa = PBXGroup;
 			children = (
-				4EA4F2C5271F767000EB4DD7 /* MusicianClass - OOP */,
-				4EA4F2C4271F767000EB4DD7 /* Products */,
+				4E8AB1BE2720273E0024673E /* MusiciansClass - OOP */,
+				4E8AB1BD2720273E0024673E /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4EA4F2C4271F767000EB4DD7 /* Products */ = {
+		4E8AB1BD2720273E0024673E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4EA4F2C3271F767000EB4DD7 /* MusicianClass - OOP */,
+				4E8AB1BC2720273E0024673E /* MusiciansClass - OOP */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4EA4F2C5271F767000EB4DD7 /* MusicianClass - OOP */ = {
+		4E8AB1BE2720273E0024673E /* MusiciansClass - OOP */ = {
 			isa = PBXGroup;
 			children = (
-				4EA4F2C6271F767000EB4DD7 /* main.swift */,
+				4E8AB1BF2720273E0024673E /* main.swift */,
+				4E8AB1C62720275A0024673E /* Musicians.swift */,
+				4E8AB1C827202D220024673E /* SuperMusicians.swift */,
 			);
-			path = "MusicianClass - OOP";
+			path = "MusiciansClass - OOP";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4EA4F2C2271F767000EB4DD7 /* MusicianClass - OOP */ = {
+		4E8AB1BB2720273E0024673E /* MusiciansClass - OOP */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4EA4F2CA271F767000EB4DD7 /* Build configuration list for PBXNativeTarget "MusicianClass - OOP" */;
+			buildConfigurationList = 4E8AB1C32720273E0024673E /* Build configuration list for PBXNativeTarget "MusiciansClass - OOP" */;
 			buildPhases = (
-				4EA4F2BF271F767000EB4DD7 /* Sources */,
-				4EA4F2C0271F767000EB4DD7 /* Frameworks */,
-				4EA4F2C1271F767000EB4DD7 /* CopyFiles */,
+				4E8AB1B82720273E0024673E /* Sources */,
+				4E8AB1B92720273E0024673E /* Frameworks */,
+				4E8AB1BA2720273E0024673E /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "MusicianClass - OOP";
-			productName = "MusicianClass - OOP";
-			productReference = 4EA4F2C3271F767000EB4DD7 /* MusicianClass - OOP */;
+			name = "MusiciansClass - OOP";
+			productName = "MusiciansClass - OOP";
+			productReference = 4E8AB1BC2720273E0024673E /* MusiciansClass - OOP */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4EA4F2BB271F767000EB4DD7 /* Project object */ = {
+		4E8AB1B42720273E0024673E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					4EA4F2C2271F767000EB4DD7 = {
+					4E8AB1BB2720273E0024673E = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
-			buildConfigurationList = 4EA4F2BE271F767000EB4DD7 /* Build configuration list for PBXProject "MusicianClass - OOP" */;
+			buildConfigurationList = 4E8AB1B72720273E0024673E /* Build configuration list for PBXProject "MusiciansClass - OOP" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +110,31 @@
 				en,
 				Base,
 			);
-			mainGroup = 4EA4F2BA271F767000EB4DD7;
-			productRefGroup = 4EA4F2C4271F767000EB4DD7 /* Products */;
+			mainGroup = 4E8AB1B32720273E0024673E;
+			productRefGroup = 4E8AB1BD2720273E0024673E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4EA4F2C2271F767000EB4DD7 /* MusicianClass - OOP */,
+				4E8AB1BB2720273E0024673E /* MusiciansClass - OOP */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4EA4F2BF271F767000EB4DD7 /* Sources */ = {
+		4E8AB1B82720273E0024673E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EA4F2C7271F767000EB4DD7 /* main.swift in Sources */,
+				4E8AB1C72720275A0024673E /* Musicians.swift in Sources */,
+				4E8AB1C927202D220024673E /* SuperMusicians.swift in Sources */,
+				4E8AB1C02720273E0024673E /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4EA4F2C8271F767000EB4DD7 /* Debug */ = {
+		4E8AB1C12720273E0024673E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -187,7 +195,7 @@
 			};
 			name = Debug;
 		};
-		4EA4F2C9271F767000EB4DD7 /* Release */ = {
+		4E8AB1C22720273E0024673E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -241,7 +249,7 @@
 			};
 			name = Release;
 		};
-		4EA4F2CB271F767000EB4DD7 /* Debug */ = {
+		4E8AB1C42720273E0024673E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -252,7 +260,7 @@
 			};
 			name = Debug;
 		};
-		4EA4F2CC271F767000EB4DD7 /* Release */ = {
+		4E8AB1C52720273E0024673E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -266,25 +274,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4EA4F2BE271F767000EB4DD7 /* Build configuration list for PBXProject "MusicianClass - OOP" */ = {
+		4E8AB1B72720273E0024673E /* Build configuration list for PBXProject "MusiciansClass - OOP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4EA4F2C8271F767000EB4DD7 /* Debug */,
-				4EA4F2C9271F767000EB4DD7 /* Release */,
+				4E8AB1C12720273E0024673E /* Debug */,
+				4E8AB1C22720273E0024673E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EA4F2CA271F767000EB4DD7 /* Build configuration list for PBXNativeTarget "MusicianClass - OOP" */ = {
+		4E8AB1C32720273E0024673E /* Build configuration list for PBXNativeTarget "MusiciansClass - OOP" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4EA4F2CB271F767000EB4DD7 /* Debug */,
-				4EA4F2CC271F767000EB4DD7 /* Release */,
+				4E8AB1C42720273E0024673E /* Debug */,
+				4E8AB1C52720273E0024673E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4EA4F2BB271F767000EB4DD7 /* Project object */;
+	rootObject = 4E8AB1B42720273E0024673E /* Project object */;
 }
